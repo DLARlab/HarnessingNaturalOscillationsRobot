@@ -5,11 +5,6 @@ This file document the control design of a quadrupdel robot with bounding gait w
 
 Bounding, a gait prevalent among quadrupedal animals in nature, is characterized by pronounced pitching motion and significant hip movement. This is the process of energy accumulation and release by quadrupeds during high-speed movement.
 
-instead of directly controlling the motion of the CoM of torso to move in a straight line at constant speed with zero body rotation, the robot was treated as two 
-coupled parts and we focusing on the motion control of the stance leg while encouraging passive oscillation of the torso.
-Three types of control schemes have been tested and compared thoroughly: conventional CoM driving, controller with LIP and model for hips, controller and SLIP
-model for hips.
-
 Contents:
 * **Simualtion examples:** conventional CoM driving, controller with LIP and model for legs, controller and SLIP model for legs.
 * **Hardware tests:** controller with LIP assumption for legs and controller with SLIP model for legs.
@@ -30,7 +25,7 @@ With contributions by: Unitree(https://github.com/unitreerobotics/unitree_guide)
 
 This projected was initially developed at Syracuse University (Dynamic Locomotion and Robotics Lab).
 
-<img src="/Fig/Model_1.png" alt="Model" width="50%" height="50%">
+<img src="/Fig/F1.pdf" alt="Model" width="50%" height="50%">
 
 ## Publications
 
