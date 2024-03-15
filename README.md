@@ -119,5 +119,5 @@ It is not recommended to test bounding on the hardware at the moment because it 
 
 ## Summary
 
-<img src="/Fig/Summary.gif" alt="Summary" width="100%" height="100%">
+<img src="/Fig/VIDEO_cut1_0001.gif" alt="Summary" width="100%" height="100%">
 
