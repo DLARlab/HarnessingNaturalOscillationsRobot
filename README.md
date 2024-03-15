@@ -73,13 +73,13 @@ For starting the controller, open an another terminal and switch to the same dir
 
 After starting the controller,  the robot will lie on the ground of the simulator, then press the '2' key on the keyboard to switch the robot's finite state machine (FSM) from **Passive**(initial state) to **FixedStand**.  
 
-Then press the '4' key to switch the FSM from **FixedStand** to **Bounding_CoM**, which is corresponding to the first control scheme in the paper. Now you can press the 'w' the accelerate the robot, the deired velocity and actual velocity will show on the terminal.
+Then press the '4' key to switch the FSM from **FixedStand** to **Bounding_CoM**, which corresponds to the first control scheme in the paper. Now, you can press the 'w' key to accelerate the robot. The desired velocity and actual velocity will show on the terminal.
 
-Press the '2', you will go back the **FixedStand** and the program automatically create plot including front/hip position, joint angle, foot position, ground reaction force, motor torque et al. After you close all the figure, you will go back to **FixedStand**.
+Press the '2' to return to the **FixedStand**. The program automatically creates a plot including front/hip position, joint angle, foot position, ground reaction force, motor torque, etc. After you close all the figures, you will return to the **FixedStand**.
 
-Go back to **FixedStand**, then press the ‘7’ key to switch the FSM from **FixedStand** to **Bounding_LIP**, which corresponds to the second control scheme in the paper.
+Go back to **FixedStand**, then press the ‘7’ key to switch the FSM from **FixedStand** to **Bounding_LIP**, which corresponds to the second control scheme in the paper. In this case, you don't need to press 'w' to accelerate the robot; the program will accelerate it by itself.
 
-Go back to **FixedStand**, then press the ‘6’ key to switch the FSM from **FixedStand** to **Bounding_SLIP**, which corresponds to the third control scheme in the paper.
+Go back to **FixedStand**, then press the ‘6’ key to switch the FSM from **FixedStand** to **Bounding_SLIP**, which corresponds to the third control scheme in the paper. In this case, you don't need to press 'w' to accelerate the robot. The program will accelerate the robot by itself.
 
 (If there is no response, you need to click on the terminal opened to start the controller and then repeat the previous operation)
 
@@ -111,7 +111,7 @@ Press 'L2+A' to switch the robot's finite state machine from **Passive** to **Fi
 
 Go back to **FixedStand**, then press the ‘L1+X key to switch the FSM from **FixedStand** to **Bounding_LIP**, which corresponds to the second control scheme in the paper.
 
-Go back to **FixedStand**, then press the 'R2+B key to switch the FSM from **FixedStand** to **Bounding_SLIP**, which corresponds to the second control scheme in the paper.
+Go back to **FixedStand**, then press the R2+B key to switch the FSM from **FixedStand** to **Bounding_SLIP**, which corresponds to the second control scheme in the paper. Be careful, the robot will accelerate very quickly.
 
 The program will record the data automatically.
 
