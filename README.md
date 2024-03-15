@@ -1,7 +1,7 @@
 # QuadrupedalRobotswithB2
 ## Overview
 
-This file documents the control design of a quadrupedal robot with a bounding gait with two flight phases.
+This file documents the control design of a quadrupedal called A1 from Unitree with a bounding gait with two flight phases.
 
 Introduction:
 
