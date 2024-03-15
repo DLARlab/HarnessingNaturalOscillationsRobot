@@ -98,10 +98,11 @@ catkin_make
 ```
 source ./devel/setup.bash
 ```
-On the same terminal, run the following command with root right:
+On the same terminal, run the following command with **root** right:
 ```
 rosrun unitree_guide junior_ctrl
 ```
+
 Use the remote controller to control the robot:
 
 Press 'L2+B' to switch the robot's finite state machine to **Passive**.
