@@ -98,7 +98,7 @@ catkin_make
 ```
 source ./devel/setup.bash
 ```
-On a terminal, run the following command with root right:
+On the same terminal, run the following command with root right:
 ```
 rosrun unitree_guide junior_ctrl
 ```
