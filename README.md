@@ -42,7 +42,7 @@ We recommend that users run this project in Ubuntu 18.04 with ROS melodic or 18.
 
 ### Dependencies
 
-Please place the three packages, unitree_guide, unitree_ros, and unitree_ros_to_real, in our repository in the ROS workspace’s source directory.
+Please place the three packages, unitree_guide, unitree_ros, and unitree_ros_to_real in our repository in a ROS workspace’s source directory.
 
 ## build
 
