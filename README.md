@@ -1,4 +1,7 @@
 # HarnessingNaturalOscillationsRobot
+## Video
+https://github.com/DLARlab/HarnessingNaturalOscillationsRobot/assets/80359063/3f761554-0ca6-4148-bd3b-320e482e725c
+
 ## Overview
 
 This file documents the control design of a quadrupedal called A1 from Unitree with a bounding gait with two flight phases.
@@ -116,7 +119,3 @@ Go back to **FixedStand**, then press the R2+B key to switch the FSM from **Fixe
 The program will record the data automatically.
 
 It is not recommended to test **Bounding_CoM** on the hardware at the moment because it has not been fully debugged.
-
-## Video
-
-https://github.com/DLARlab/HarnessingNaturalOscillationsRobot/assets/80359063/3f761554-0ca6-4148-bd3b-320e482e725c
