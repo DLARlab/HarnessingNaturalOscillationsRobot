@@ -117,7 +117,6 @@ The program will record the data automatically.
 
 It is not recommended to test **Bounding_CoM** on the hardware at the moment because it has not been fully debugged.
 
-## Summary
+## Video
 
-<img src="/Fig/VIDEO_cut1_0001.gif" alt="Summary" width="100%" height="100%">
-
+https://github.com/DLARlab/HarnessingNaturalOscillationsRobot/assets/80359063/3f761554-0ca6-4148-bd3b-320e482e725c
