@@ -3,6 +3,8 @@
 
 This file document the control design of a quadrupdel robot with bounding gait with two flight phases.
 
+Introduction:
+
 Bounding, a gait prevalent among quadrupedal animals in nature, is characterized by pronounced pitching motion and significant hip movement. This is the process of energy accumulation and release by quadrupeds during high-speed movement.
 
 Contents:
@@ -25,7 +27,7 @@ With contributions by: Unitree(https://github.com/unitreerobotics/unitree_guide)
 
 This projected was initially developed at Syracuse University (Dynamic Locomotion and Robotics Lab).
 
-<img src="/Fig/F1.pdf" alt="Model" width="50%" height="50%">
+<img src="/Fig/F1.png" alt="Model" width="50%" height="50%">
 
 ## Publications
 
@@ -33,19 +35,87 @@ This work has been submitted to  IEEE/RSJ International Conference on Intelligen
 
 If you use this work in an academic context, please cite the following publication:
 
-
 ## Requirements
 ### Environment
-We recommand users to run this project in Ubuntu 18.04 and ROS melodic environment.
+
+We recommand users to run this project in Ubuntu 18.04 with ROS melodic or 18.04 with ROS noetic.
+
 ### Dependencies
-2. [unitree_ros](https://github.com/unitreerobotics/unitree_ros)<br>
-3. [unitree_legged_msgs](https://github.com/unitreerobotics/unitree_ros_to_real)(Note that: unitree_legged_real package should not be a part of dependencies)<br>This code requires a MATLAB version later than MATLAB R2019b.
+
+Please place those three packages:unitree_guide, unitree_ros, and unitree_ros_to_real, in our repository in the source directory of ROS workspace.
+
+## build
+
+Open a terminal and switch the directory to the ros workspace containing unitree_guide,  then run the following command to build the project:
+```
+catkin_make
+```
+If you have any error in this step, you can raise an issue to us.
+
+## run
+
+In the same terminal, run the following command step by step:
+```
+source ./devel/setup.bash
+```
+To open the gazebo simulator, run:
+```
+roslaunch unitree_guide gazeboSim.launch 
+```
+
+For starting the controller, open an another terminal and switch to the same directory,  then run the following command:
+```
+./devel/lib/unitree_guide/junior_ctrl
+```
 
 ## Usage
 
-Readers can simply open 'Demo_Main.m' and hit the 'Run' button to follow the whole demo code.
+### Simulation
 
-Readers can also run any individual section if interested by hitting the 'Run Section' button, or navigate to the foler of each section and run 'Section_X_XXXX'.
+After starting the controller,  the robot will lie on the ground of the simulator, then press the '2' key on the keyboard to switch the robot's finite state machine (FSM) from **Passive**(initial state) to **FixedStand**.  
+
+Then press the '4' key to switch the FSM from **FixedStand** to **Bounding_CoM**, which is cooresponding to the fist control scheme in the paper. Now you can press the 'w' the accelerate the robot, the deired velocity and actual velocity will show on the terminal.
+
+Press the '2', you will go back the **FixedStand** and the program automatically create plot including front/hip position, joint angle, foot position, ground reaction force, motor torque et al. After you close all the figure, you will go back to **FixedStand**.
+
+Go back to to **FixedStand**, then press the '7' key to switch the FSM from **FixedStand** to **Bounding_LIP**, which is cooresponding to the second control scheme in the paper.
+
+Go back to to **FixedStand**, then press the '6' key to switch the FSM from **FixedStand** to **Bounding_SLIP**, which is cooresponding to the third control scheme in the paper.
+
+(If there is no response, you need to click on the terminal opened for starting the controller and then repeat the previous operation)
+
+### Hardware implementation
+
+Connect a cable to you computer or download entire folder in you robot computer.
+
+Assme you connect your robot with a cable, set the local IP address as 192.168.123.xxx. Then ping 192.168.123.161 to make sure your computer can communicate with robot.
+
+In the CmakeLists.txt file, set REAL_ROBOT ON, set SIMULARION OFF, set DEBUG OFF.
+
+Open a terminal and switch the directory to the ros workspace containing unitree_guide,  then run the following command to build the project:
+```
+catkin_make
+```
+```
+source ./devel/setup.bash
+```
+On a terminal, run following command with root right:
+```
+rosrun unitree_guide junior_ctrl
+```
+Use the remote controller to control the robot:
+
+Press 'L2+B' to switch the robot's finite state machine to **Passive**.
+
+Press 'L2+A' to switch the robot's finite state machine from **Passive** to **FixedStand**. 
+
+Go back to to **FixedStand**, then press the 'L1+X key to switch the FSM from **FixedStand** to **Bounding_LIP**, which is cooresponding to the second control scheme in the paper.
+
+Go back to to **FixedStand**, then press the 'R2+B key to switch the FSM from **FixedStand** to **Bounding_SLIP**, which is cooresponding to the second control scheme in the paper.
+
+The program will record the data automaticaly.
+
+It is not recommended to test bounding on the hardware at the moment because it has not been fully debugged.
 
 ## Summary
 
