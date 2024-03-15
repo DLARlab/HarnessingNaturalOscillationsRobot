@@ -38,7 +38,7 @@ If you use this work in an academic context, please cite the following publicati
 ## Requirements
 ### Environment
 
-We recommend that users run this project in Ubuntu 18.04 with ROS melodic or 18.04 with ROS noetic.
+We recommend that users run this project in Ubuntu 18.04 with ROS melodic or 20.04 with ROS noetic.
 
 ### Dependencies
 
@@ -46,7 +46,7 @@ Please place the three packages, unitree_guide, unitree_ros, and unitree_ros_to_
 
 ## build
 
-Open a terminal and switch the directory to the ros workspace containing unitree_guide,  then run the following command to build the project:
+Open a terminal and switch the directory to the ros workspace containing unitree_guide, then run the following command to build the project:
 ```
 catkin_make
 ```
@@ -77,7 +77,7 @@ Then press the '4' key to switch the FSM from **FixedStand** to **Bounding_CoM**
 
 Press the '2' to return to the **FixedStand**. The program automatically creates a plot including front/hip position, joint angle, foot position, ground reaction force, motor torque, etc. After you close all the figures, you will return to the **FixedStand**.
 
-Go back to **FixedStand**, then press the ‘7’ key to switch the FSM from **FixedStand** to **Bounding_LIP**, which corresponds to the second control scheme in the paper. In this case, you don't need to press 'w' to accelerate the robot; the program will accelerate it by itself.
+Go back to **FixedStand**, then press the ‘7’ key to switch the FSM from **FixedStand** to **Bounding_LIP**, which corresponds to the second control scheme in the paper. In this case, you don't need to press 'w' to accelerate the robot. The program will accelerate it by itself.
 
 Go back to **FixedStand**, then press the ‘6’ key to switch the FSM from **FixedStand** to **Bounding_SLIP**, which corresponds to the third control scheme in the paper. In this case, you don't need to press 'w' to accelerate the robot. The program will accelerate the robot by itself.
 
