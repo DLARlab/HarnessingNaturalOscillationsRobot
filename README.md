@@ -14,7 +14,7 @@ Contents:
 Features:
 
 * **Hip motion:** Instead of directly controlling the motion of the torso’s CoM to move in a straight line at a constant speed with zero body rotation, the robot was treated as two coupled parts. We focused on the motion control of the stance leg while encouraging passive oscillation of the torso. 
-* **Pitching motion:** promoting passive oscillation of the torso.
+* **Pitching motion:** promoting natural oscillations of the torso for High-Speed, Efficient Asymmetrical Locomotion.
 
 This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
 
