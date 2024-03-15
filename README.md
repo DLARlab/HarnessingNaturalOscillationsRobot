@@ -1,4 +1,4 @@
-# QuadrupedalRobotswithB2
+# HarnessingNaturalOscillationsRobot
 ## Overview
 
 This file documents the control design of a quadrupedal called A1 from Unitree with a bounding gait with two flight phases.
@@ -27,7 +27,7 @@ With contributions by: Unitree(https://github.com/unitreerobotics/unitree_guide)
 
 This project was initially developed at Syracuse University (Dynamic Locomotion and Robotics Lab).
 
-<img src="/Fig/F1.png" alt="Model" width="50%" height="50%">
+<img src="/Fig/fig1.svg" alt="Model" width="100%" height="100%">
 
 ## Publications
 
