@@ -114,7 +114,7 @@ Go back to **FixedStand**, then press the 'R2+B key to switch the FSM from **Fix
 
 The program will record the data automatically.
 
-It is not recommended to test bounding on the hardware at the moment because it has not been fully debugged.
+It is not recommended to test **Bounding_CoM** on the hardware at the moment because it has not been fully debugged.
 
 ## Summary
 
